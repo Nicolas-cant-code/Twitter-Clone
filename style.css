@@ -1,9 +1,12 @@
+
 /* EVERYTHING */
 * {
     background-color: black;
     box-sizing: border-box;
-    font-weight: 700;
-    font-family: TwitterChirp -apple-system;
+    /* font-family: -apple-system; */
+    color: rgb(231, 233, 234);
+    margin: 0;
+    padding: 0;
 }
 
 /* SIDEBAR LEFT */
@@ -12,6 +15,71 @@
     height: 100vh;
     padding-left: 319px;
 }
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    line-height: 24px;
+    width: 259px;
+    padding: 0 8px;
+}
+.category {
+    padding: 12px;
+    margin: 2.5px 0px;
+    border-radius: 9999px;
+    cursor: pointer;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+.category i {
+    margin-right: 20px;
+    font-size: 30px;
+}
+.category p {
+    margin: 0 16px 0 0;
+}
+.category:hover {
+    transition: 0.3s;
+    background:rgb(22, 24, 28);
+    i {
+        background:rgb(22, 24, 28);    
+    }
+    svg {
+        background:rgb(22, 24, 28); 
+    }
+    p {
+        background:rgb(22, 24, 28); 
+    }
+}
+.category svg {
+    width: 26.25px;
+    height: 26.25px;
+    fill: white;
+    margin-right: 20px;
+}
+.active {
+    font-weight: 700;
+}
+
+.post {
+    font-size: 17px;
+    width: 233.09px;
+    height: 52px;
+    padding: 0 32px;
+    background-color: white;
+    color: rgb(15, 20, 25);
+    line-height: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin: 16px 0px;
+}
+.post:hover {
+    transition: 0.3s;
+    background-color: rgb(255, 255, 255, 0.9);
+}
+
 .logo {
     height: 52px;
     width: 52px;   
