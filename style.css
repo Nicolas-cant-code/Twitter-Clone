@@ -9,6 +9,14 @@
     padding: 0;
 }
 
+/* SECTIONS (Sidebar main and right section) */
+.sections {
+    display: flex;
+    height: 100vh;
+    overflow-y: scroll;
+    width: 100%;
+}
+
 /* SIDEBAR LEFT */
 .sidebar {
     width: 594px;
@@ -16,6 +24,7 @@
     padding-left: 319px;
 }
 
+/* Sidebar navigation */
 .categories {
     display: flex;
     flex-direction: column;
@@ -24,6 +33,7 @@
     width: 259px;
     padding: 0 8px;
 }
+/* Each option */
 .category {
     padding: 12px;
     margin: 2.5px 0px;
@@ -43,14 +53,8 @@
 .category:hover {
     transition: 0.3s;
     background:rgb(22, 24, 28);
-    i {
+    * {
         background:rgb(22, 24, 28);    
-    }
-    svg {
-        background:rgb(22, 24, 28); 
-    }
-    p {
-        background:rgb(22, 24, 28); 
     }
 }
 .category svg {
@@ -63,11 +67,11 @@
     font-weight: 700;
 }
 
-.post {
+/* post button */
+.post-button {
     font-size: 17px;
-    width: 233.09px;
     height: 52px;
-    padding: 0 32px;
+    padding: 0 98px;
     background-color: white;
     color: rgb(15, 20, 25);
     line-height: 20px;
@@ -75,11 +79,12 @@
     text-align: center;
     margin: 16px 0px;
 }
-.post:hover {
+.post-button:hover {
     transition: 0.3s;
-    background-color: rgb(255, 255, 255, 0.9);
+    background-color: rgb(255, 255, 255, 0.85);
 }
 
+/* TWITTER (X) LOGO */
 .logo {
     height: 52px;
     width: 52px;   
@@ -101,3 +106,47 @@
     background: rgb(22, 24, 28);
 }
 
+/* Account */
+.account {
+    width: 259px;
+    padding: 12px;
+    font-size: 15px;
+    display: flex;
+    height: 65.06px;
+    align-items: center;
+    margin: 33px 0px 12px 8px;
+    border-radius: 9999px;
+    cursor: pointer;
+}
+.account img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.account p {
+    margin-left:12px;
+    margin-bottom: 0px;
+}
+.account i {
+    font-size: 21px;
+    margin-left: 42px;
+}
+.account:hover {
+    background: rgb(22, 24, 28);
+    * {
+        background: rgb(22, 24, 28);
+    }
+}
+/* Lighter text */
+.lighter {
+    color: rgb(113, 118, 123);
+}
+
+/* MAIN SECTION */
+.main-section {
+    width: 600px;
+    padding: 0px 12px;
+    border: 1px solid #2f3336;
+    border-bottom: 0px;
+    border-top: 0px;
+}
