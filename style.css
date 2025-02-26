@@ -3,7 +3,7 @@
 * {
     background-color: black;
     box-sizing: border-box;
-    /* font-family: -apple-system; */
+    font-family: TwitterChirp, -apple-system;
     color: rgb(231, 233, 234);
     margin: 0;
     padding: 0;
@@ -24,19 +24,49 @@
     padding-left: 319px;
 }
 
+/* TWITTER (X) LOGO */
+.logo {
+    height: 54px;
+    width: 52px;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1px 0px 3px 8px;
+    padding: 10px;
+    border-radius: 50%;
+}
+.logo svg {
+    box-sizing: content-box;
+    fill: rgb(239, 243, 244);
+    text-align: center;
+    cursor: pointer;
+    height: 30px;
+} 
+.logo svg path {
+    height: 24.38px;
+    width: 26.97px;
+}
+.logo:hover {
+    background: rgb(22, 24, 28);
+    svg {
+        background: rgb(22, 24, 28);
+    }
+}
+
 /* Sidebar navigation */
 .categories {
     display: flex;
     flex-direction: column;
     font-size: 20px;
     line-height: 24px;
-    width: 259px;
+    width: 275px;
     padding: 0 8px;
+    margin-bottom: 4px;
 }
 /* Each option */
 .category {
     padding: 12px;
-    margin: 2.5px 0px;
+    margin: 4px 0px;
     border-radius: 9999px;
     cursor: pointer;
     width: fit-content;
@@ -44,8 +74,8 @@
     align-items: center;
 }
 .category i {
-    margin-right: 20px;
-    font-size: 30px;
+    margin-right: 19.5px;
+    font-size: 26.25px;
 }
 .category p {
     margin: 0 16px 0 0;
@@ -61,7 +91,7 @@
     width: 26.25px;
     height: 26.25px;
     fill: white;
-    margin-right: 20px;
+    margin-right: 19.5px;
 }
 .active {
     font-weight: 700;
@@ -77,33 +107,11 @@
     line-height: 20px;
     font-weight: 700;
     text-align: center;
-    margin: 16px 0px;
+    margin: 20px 0px 16px 0;
 }
 .post-button:hover {
     transition: 0.3s;
     background-color: rgb(255, 255, 255, 0.85);
-}
-
-/* TWITTER (X) LOGO */
-.logo {
-    height: 52px;
-    width: 52px;   
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 4px;
-    margin-left: 9px;
-}
-.logo svg {
-    border-radius: 50%; 
-    box-sizing: content-box;
-    padding: 10px;
-    fill: white;
-    text-align: center;
-    cursor: pointer;
-}
-.logo :hover {
-    background: rgb(22, 24, 28);
 }
 
 /* Account */
@@ -112,9 +120,9 @@
     padding: 12px;
     font-size: 15px;
     display: flex;
-    height: 65.06px;
+    height: 65.063px;
     align-items: center;
-    margin: 33px 0px 12px 8px;
+    margin: 31px 0px 12px 8px;
     border-radius: 9999px;
     cursor: pointer;
 }
@@ -122,14 +130,18 @@
     height: 40px;
     width: 40px;
     border-radius: 50%;
+    margin-bottom: 2px;
+}
+.account span {
+    height: 41.063px
 }
 .account p {
-    margin-left:12px;
+    margin-left:11.5px;
     margin-bottom: 0px;
 }
 .account i {
     font-size: 21px;
-    margin-left: 42px;
+    margin-left: 50px;
 }
 .account:hover {
     background: rgb(22, 24, 28);
@@ -164,12 +176,12 @@
     cursor: pointer;
 }
 .top-nav span {
-    width: 100%;
+    width: 306.11px;
     height: 100%;
     text-align: center;
     font-weight: 500;
     font-size: 15px;
-    padding: 16px 16px;
+    padding: 16.5px 16px 16px 16px;
     color: rgb(113, 118, 123);
 }
 .top-nav span:hover{
@@ -178,6 +190,7 @@
 }
 .top-nav .active {
     font-weight: 700;
+    width: 291.91px;
     color: rgb(231, 233, 234);
     display: flex;
     flex-direction: column;
@@ -214,12 +227,17 @@
 #text {
     width: 100%;
     padding: 2px 0px;
-    margin: 2px;
+    margin: 1.5px 2px 2px 2px;
     outline: none;
     border: none;
     font-size: 20px;
     color: rgb(231, 233, 234);
 }
+#text::placeholder {
+    color: #63686c
+}
+
+/* Reply section only shows when you start typing
 
 .reply {
     cursor: pointer;
@@ -245,12 +263,13 @@
     * {
         background: rgb(29, 155, 240, 0);
     }
-}
+} 
+*/
 
 .under-reply {
     width: 100%;
     display: flex;
-    margin-top: 7px;
+    margin-top: 4.5px;
 }
 .under-icons {
     width: 518px;
@@ -262,6 +281,7 @@
 
 .under-icons svg {
     box-sizing: content-box;
+    margin-right: 0.75px;
     padding: 6px;
     height: 20px;
     width: 20px;
@@ -298,11 +318,15 @@
     border-top: 1px solid #2f3336;
     color: rgb(29, 155, 240);
     text-align: center;
-    padding-top: 13px;
+    padding-top: 13.5px;
     font-size: 15px;
     cursor: pointer;
 }
 .show-posts:hover {
     transition: 0.3s;
     background:rgb(22, 24, 28, 0.3);   
+}
+
+.posts {
+    padding: 0px 16px;
 }
