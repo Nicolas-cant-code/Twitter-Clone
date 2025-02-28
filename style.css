@@ -1,3 +1,8 @@
+/* SCROLLBARS */
+.right-sidebar::-webkit-scrollbar {
+    display: none;
+}
+
 
 /* EVERYTHING */
 * {
@@ -9,11 +14,23 @@
     padding: 0;
 }
 
+.main-and-right-sidebar {
+    overflow-y: scroll;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
 /* SECTIONS (Sidebar main and right section) */
+/* ALL FOLLOWING SECTIONS OF CODE ARE LAYED OUT FROM
+    SIDELEFT, MAIN AND THEN RIGHT SIDE {Each will have
+    a heading in caps} */
+
 .sections {
     display: flex;
     height: 100vh;
     width: 100%;
+    color-scheme: dark;
 }
 
 /* SIDEBAR LEFT */
@@ -24,7 +41,7 @@
     position: fixed;
 }
 
-/* TWITTER (X) LOGO */
+/* Twitter (X) Logo */
 .logo {
     height: 54px;
     width: 52px;   
@@ -172,6 +189,7 @@
     border-bottom: 1px solid #2f3336;
     cursor: pointer;
     z-index: 1;
+    opacity: 85%;
 }
 .top-nav span {
     width: 306.11px;
@@ -325,17 +343,200 @@
     background:rgb(22, 24, 28, 0.3);   
 }
 
-/* MAIN SECTION */
-.posts {
-    
+/* THE TWITTER POSTS */
+.posted-content {
+    display: flex;
+    border-bottom: 1px solid #2f3336;
+    cursor: pointer;
+    padding: 12px 16px 0px 16px;
+}
+.posted-content:hover {
+    transition: 0.2s;
+    background-color: rgb(8, 8, 8);
+    * {
+        background-color: rgb(8, 8, 8);
+    }
+}
+.posted-content img {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+    border-radius: 50%;
+}
+.posted-content svg:hover {
+    transition: 0.2s;
+    background-color: rgb(29, 155, 240, 0.15);
+    fill: rgb(29, 155, 240);
+    z-index: 1;
+}
+
+/* All the content next to the image */
+.twitter-post {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Details about twitter poster */
+.details {
+    display: flex;
+    position: relative;
+}
+.details svg {
+    position: relative;
+    fill: rgb(29, 155, 240);
+    height: 18.75px;
+    width: 18.75px;
+    margin: 3px 0px 0px 4px;
+}
+
+.description {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.details .first-icon {
+    position: absolute;
+    right: 26.75px;
+    fill: rgb(113, 118, 123);
+    box-sizing: content-box;
+    padding: 8px;
+    border-radius: 50%;
+    top: -10px;
+}
+.details .second-icon {
+    position: absolute;
+    right: 0px;
+    fill: rgb(113, 118, 123);
+    box-sizing: content-box;
+    padding: 8px;
+    border-radius: 50%;
+    top: -10px;
+}
+.left-margin {
+    margin-left: 4px;
+}
+
+video {
+    width: 516px;
+    height: 516px;
+    border: 1px solid rgb(47, 51, 54);
+    border-radius: 16px;
+}
+/* .video-elements {
+    display: flex;
+    margin-top: -40px;
+    margin-bottom: 15px;
+}
+.play {
+    margin-right: 245px;
+    margin-left: 16px;
+}
+
+.video-elements svg {
+    width: 20px;
+    height: 20px;
+    fill: white;
+}
+video:hover {
+    .video-elements {
+        z-index: 1;
+    }
+} */
+
+.bottom-icons {
+    margin: 2px 0px 2px -8px;
+    display: flex;
+    align-items: center;
+}
+.bottom-icons svg {
+    box-sizing: content-box;
+    fill: rgb(113, 118, 123);
+    height: 18.75px;
+    width: 18.75px;
+    padding: 8px;
+    border-radius: 50%;
+}
+.bottom-icons span {
+    color: rgb(113, 118, 123);
+    font-size: 13px;
+    margin-left: -4px;
+    line-height: 16px;
+    margin-right: 58.8px;
+}
+
+.second {
+    margin-left: -6px;
+}
+
+.grouped-bottom-icon1 {
+    display: flex;
+    align-items: center;
+}
+.grouped-bottom-icon1:hover {
+    transition: 0.2s;
+    svg {
+        background-color: rgb(29, 155, 240, 0.15);
+        fill: rgb(29, 155, 240);
+    }
+    span {
+    color: rgb(29, 155, 240);
+    }    
+}
+
+.grouped-bottom-icon2 {
+    display: flex;
+    align-items: center;
+}
+.grouped-bottom-icon2:hover {
+    transition: 0.2s;
+    svg {
+        background-color: rgb(0, 186, 124,0.15);
+        fill: rgb(0, 186, 124);;
+    }
+    span {
+        color: rgb(0, 186, 124);
+    }  
+}
+
+.grouped-bottom-icon3 {
+    display: flex;
+    align-items: center;
+}
+.grouped-bottom-icon3:hover {
+    transition: 0.2s;
+    svg {
+        background-color: rgb(249, 24, 128, 0.15);
+        fill: rgb(249, 24, 128)
+    }
+    span {
+        color: rgb(249, 24, 128)
+    }  
+}
+
+.grouped-bottom-icon4 {
+    display: flex;
+    align-items: center;
+}
+.grouped-bottom-icon4:hover {
+    transition: 0.2s;
+    svg {
+        background-color: rgb(29, 155, 240, 0.15);
+        fill: rgb(29, 155, 240);
+    }
+    span {
+        color: rgb(29, 155, 240);
+    }  
 }
 
 /* RIGHT SIDEBAR */
 .right-sidebar {
     box-sizing: content-box;
+    overflow: scroll;
     width: 350px;
     padding-left: 30px;
     margin-right: 70px;
+    position: sticky;
+    top: 0px;
 }
 
 /* Search bar */
@@ -619,183 +820,27 @@ footer ul li svg {
     padding-top: 6px;
 }
 
-/* THE TWITTER POSTS */
-.posted-content {
-    display: flex;
-    border-bottom: 1px solid #2f3336;
-    cursor: pointer;
-    padding: 16px 16px 0px 16px;
-}
-.posted-content:hover {
-    transition: 0.2s;
-    background-color: rgb(8, 8, 8);
-    * {
-        background-color: rgb(8, 8, 8);
-    }
-}
-.posted-content img {
-    width: 40px;
-    height: 40px;
-    margin-right: 8px;
-    border-radius: 50%;
-}
-.posted-content svg:hover {
-    transition: 0.2s;
-    background-color: rgb(29, 155, 240, 0.15);
-    fill: rgb(29, 155, 240);
-    z-index: 1;
-}
-
-/* All the content next to the image */
-.twitter-post {
-    display: flex;
-    flex-direction: column;
-}
-
-/* Details about twitter poster */
-.details {
-    display: flex;
-}
-.details svg {
-    position: relative;
-    fill: rgb(29, 155, 240);
-    height: 18.75px;
-    width: 18.75px;
-    margin: 3px 2px 0px 4px;
-}
-
-.description {
-    font-size: 15px;
-    line-height: 20px;
-}
-
-.details .first-icon {
+.grokAI {
     position: absolute;
-    right: 42.75px;
-    fill: rgb(113, 118, 123);
-    box-sizing: content-box;
-    padding: 8px;
-    border-radius: 50%;
+    bottom: 12px;
+    right: 37px;
 }
-.details .second-icon {
-    position: absolute;
-    right: 16px;
-    fill: rgb(113, 118, 123);
+.grokAI svg {
     box-sizing: content-box;
-    padding: 8px;
-    border-radius: 50%;
-}
-
-video {
-    width: 516px;
-    height: 516px;
-    border: 1px solid rgb(47, 51, 54);
+    padding: 11.5px 11.5px 10.5px 10.5px;
+    fill: white;
+    width: 32px;
+    height: 32px;
     border-radius: 16px;
 }
-/* .video-elements {
-    display: flex;
-    margin-top: -40px;
-    margin-bottom: 15px;
+.grokAI svg:hover {
+    transition: 0.3s;
+    background: rgb(29, 155, 240, 0.15);
 }
-.play {
-    margin-right: 245px;
-    margin-left: 16px;
+.grokAI button {
+    height: 57px;
+    border-radius: 16px;
+    border: 1px solid rgb(75, 78, 82);
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 15px 0px, rgba(255, 255, 255, 0.15) 0px 0px 3px 1px;
 }
-
-.video-elements svg {
-    width: 20px;
-    height: 20px;
-    fill: white;
-}
-video:hover {
-    .video-elements {
-        z-index: 1;
-    }
-} */
-
-.bottom-icons {
-    margin: 2px 0px 2px -8px;
-    display: flex;
-    align-items: center;
-}
-.bottom-icons svg {
-    box-sizing: content-box;
-    fill: rgb(113, 118, 123);
-    height: 18.75px;
-    width: 18.75px;
-    padding: 8px;
-    border-radius: 50%;
-}
-.bottom-icons span {
-    color: rgb(113, 118, 123);
-    font-size: 13px;
-    margin-left: -4px;
-    line-height: 16px;
-    margin-right: 58.8px;
-}
-
-.second {
-    margin-left: -6px;
-}
-
-.grouped-bottom-icon1 {
-    display: flex;
-    align-items: center;
-}
-.grouped-bottom-icon1:hover {
-    transition: 0.2s;
-    svg {
-        background-color: rgb(29, 155, 240, 0.15);
-        fill: rgb(29, 155, 240);
-    }
-    span {
-    color: rgb(29, 155, 240);
-    }    
-}
-
-.grouped-bottom-icon2 {
-    display: flex;
-    align-items: center;
-}
-.grouped-bottom-icon2:hover {
-    transition: 0.2s;
-    svg {
-        background-color: rgb(0, 186, 124,0.15);
-        fill: rgb(0, 186, 124);;
-    }
-    span {
-        color: rgb(0, 186, 124);
-    }  
-}
-
-.grouped-bottom-icon3 {
-    display: flex;
-    align-items: center;
-}
-.grouped-bottom-icon3:hover {
-    transition: 0.2s;
-    svg {
-        background-color: rgb(249, 24, 128, 0.15);
-        fill: rgb(249, 24, 128)
-    }
-    span {
-        color: rgb(249, 24, 128)
-    }  
-}
-
-.grouped-bottom-icon4 {
-    display: flex;
-    align-items: center;
-}
-.grouped-bottom-icon4:hover {
-    transition: 0.2s;
-    svg {
-        background-color: rgb(29, 155, 240, 0.15);
-        fill: rgb(29, 155, 240);
-    }
-    span {
-        color: rgb(29, 155, 240);
-    }  
-}
-
 
