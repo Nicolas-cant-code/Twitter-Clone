@@ -843,7 +843,7 @@ footer ul li svg {
 }
 
 /* JAVASCRIPT CSS */
-.top-nav .scrolling {
-    transition: 0.5s;
+.scrolling {
+    transition: all 0.5s;
     opacity: 85%;
 }

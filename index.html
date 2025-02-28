@@ -91,13 +91,13 @@
         
         <div class="main-and-right-sidebar">
             <div class="main-section">
-                <div class="top-nav">
+                <header class="top-nav">
                     <span class="active">
                         For you
                         <div class="blue-line"></div>
                     </span>
                     <span>Following</span>
-                </div>
+                </header>
 
                 <div class="posting">
                 <div class="text">
@@ -537,14 +537,11 @@
     </div>
 
     <script>
-        const topNav = document.getElementById("top-nav");
+        const scrollableElement = document.querySelector('.main-and-right-sidebar');
 
-        window.addEventListener("scroll", () => {
-            if (window.scrollY > 0) { // Change 100 to whatever scroll position you want
-                topNav.classList.add("scrolling");
-            } else {
-                topNav.classList.remove("scrolling");
-            }
+        scrollableElement.addEventListener("scroll", () => {
+            const header = document.querySelector("header")
+            header.classList.toggle("scrolling",window.scrollY > 0)
         })
     </script>
     
