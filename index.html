@@ -535,6 +535,18 @@
             </button>
         </div>
     </div>
+
+    <script>
+        const topNav = document.getElementById("top-nav");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 0) { // Change 100 to whatever scroll position you want
+                topNav.classList.add("scrolling");
+            } else {
+                topNav.classList.remove("scrolling");
+            }
+        })
+    </script>
     
 </body>
 </html>

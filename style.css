@@ -3,7 +3,6 @@
     display: none;
 }
 
-
 /* EVERYTHING */
 * {
     background-color: black;
@@ -189,7 +188,6 @@
     border-bottom: 1px solid #2f3336;
     cursor: pointer;
     z-index: 1;
-    opacity: 85%;
 }
 .top-nav span {
     width: 306.11px;
@@ -844,3 +842,8 @@ footer ul li svg {
     box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 15px 0px, rgba(255, 255, 255, 0.15) 0px 0px 3px 1px;
 }
 
+/* JAVASCRIPT CSS */
+.top-nav .scrolling {
+    transition: 0.5s;
+    opacity: 85%;
+}
