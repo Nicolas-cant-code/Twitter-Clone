@@ -1,23 +1,25 @@
+/* Phone CSS at the bottom */
+
 /* SCROLLBARS */
 .right-sidebar::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 /* EVERYTHING */
 * {
-    background-color: black;
-    box-sizing: border-box;
-    font-family: TwitterChirp, -apple-system;
-    color: rgb(231, 233, 234);
-    margin: 0;
-    padding: 0;
+  background-color: black;
+  box-sizing: border-box;
+  font-family: TwitterChirp, -apple-system;
+  color: rgb(231, 233, 234);
+  margin: 0;
+  padding: 0;
 }
 
 .main-and-right-sidebar {
-    overflow-y: scroll;
-    display: flex;
-    width: 100%;
-    height: 100vh;
+  overflow-y: scroll;
+  display: flex;
+  width: 100%;
+  height: 100vh;
 }
 
 /* SECTIONS (Sidebar main and right section) */
@@ -26,230 +28,230 @@
     a heading in caps} */
 
 .sections {
-    display: flex;
-    height: 100vh;
-    width: 100%;
-    color-scheme: dark;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  color-scheme: dark;
 }
 
 /* SIDEBAR LEFT */
 .sidebar {
-    width: 594px;
-    height: 100vh;
-    padding-left: 319px;
-    position: fixed;
+  width: 594px;
+  height: 100vh;
+  padding-left: 319px;
+  position: fixed;
 }
 
 /* Twitter (X) Logo */
 .logo {
-    height: 54px;
-    width: 52px;   
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1px 0px 3px 8px;
-    padding: 10px;
-    border-radius: 50%;
+  height: 54px;
+  width: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1px 0px 3px 8px;
+  padding: 10px;
+  border-radius: 50%;
 }
 .logo svg {
-    box-sizing: content-box;
-    fill: rgb(239, 243, 244);
-    text-align: center;
-    cursor: pointer;
-    height: 30px;
-} 
+  box-sizing: content-box;
+  fill: rgb(239, 243, 244);
+  text-align: center;
+  cursor: pointer;
+  height: 30px;
+}
 .logo svg path {
-    height: 24.38px;
-    width: 26.97px;
+  height: 24.38px;
+  width: 26.97px;
 }
 .logo:hover {
+  background: rgb(22, 24, 28);
+  svg {
     background: rgb(22, 24, 28);
-    svg {
-        background: rgb(22, 24, 28);
-    }
+  }
 }
 
 /* Sidebar navigation */
 .categories {
-    display: flex;
-    flex-direction: column;
-    font-size: 20px;
-    line-height: 24px;
-    width: 275px;
-    padding: 0 8px;
-    margin-bottom: 4px;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  line-height: 24px;
+  width: 275px;
+  padding: 0 8px;
+  margin-bottom: 4px;
 }
 /* Each option */
 .category {
-    padding: 12px;
-    margin: 4px 0px;
-    border-radius: 9999px;
-    cursor: pointer;
-    width: fit-content;
-    display: flex;
-    align-items: center;
+  padding: 12px;
+  margin: 4px 0px;
+  border-radius: 9999px;
+  cursor: pointer;
+  width: fit-content;
+  display: flex;
+  align-items: center;
 }
 .category i {
-    margin-right: 19.7px;
-    font-size: 26.25px;
+  margin-right: 19.7px;
+  font-size: 26.25px;
 }
 .category p {
-    margin: 0 16px 0 0;
+  margin: 0 16px 0 0;
 }
 .category:hover {
-    transition: 0.3s;
-    background:rgb(22, 24, 28);
-    * {
-        background:rgb(22, 24, 28);    
-    }
+  transition: 0.3s;
+  background: rgb(22, 24, 28);
+  * {
+    background: rgb(22, 24, 28);
+  }
 }
 .category svg {
-    width: 26.25px;
-    height: 26.25px;
-    fill: white;
-    margin-right: 19.5px;
+  width: 26.25px;
+  height: 26.25px;
+  fill: white;
+  margin-right: 19.5px;
 }
 .active {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 /* post button */
 .post-button {
-    font-size: 17px;
-    height: 52px;
-    padding: 0 98px;
-    background-color: white;
-    color: rgb(15, 20, 25);
-    line-height: 20px;
-    font-weight: 700;
-    text-align: center;
-    margin: 20px 0px 16px 0;
+  font-size: 17px;
+  height: 52px;
+  padding: 0 98px;
+  background-color: white;
+  color: rgb(15, 20, 25);
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  margin: 20px 0px 16px 0;
 }
 .post-button:hover {
-    transition: 0.3s;
-    background-color: rgb(255, 255, 255, 0.85);
+  transition: 0.3s;
+  background-color: rgb(255, 255, 255, 0.85);
 }
 
 /* Account */
 .account {
-    width: 259px;
-    padding: 12px;
-    font-size: 15px;
-    display: flex;
-    height: 65.063px;
-    align-items: center;
-    margin: 31px 0px 12px 8px;
-    border-radius: 9999px;
-    cursor: pointer;
+  width: 259px;
+  padding: 12px;
+  font-size: 15px;
+  display: flex;
+  height: 65.063px;
+  align-items: center;
+  margin: 31px 0px 12px 8px;
+  border-radius: 9999px;
+  cursor: pointer;
 }
 .account-img {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    margin-bottom: 2px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-bottom: 2px;
 }
 .account span {
-    height: 41.063px
+  height: 41.063px;
 }
 .account p {
-    margin-left:11.5px;
-    margin-bottom: 0px;
+  margin-left: 11.5px;
+  margin-bottom: 0px;
 }
 .account i {
-    font-size: 21px;
-    margin-left: 50px;
+  font-size: 21px;
+  margin-left: 50px;
 }
 .account:hover {
+  background: rgb(22, 24, 28);
+  * {
     background: rgb(22, 24, 28);
-    * {
-        background: rgb(22, 24, 28);
-    }
+  }
 }
 
 /* MAIN SECTION */
 .main-section {
-    width: 600px;
-    border: 1px solid #2f3336;
-    border-bottom: 0px;
-    border-top: 0px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    margin-left: calc(594px);
-    height: max-content;
+  width: 600px;
+  border: 1px solid #2f3336;
+  border-bottom: 0px;
+  border-top: 0px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-left: calc(594px);
+  height: max-content;
 }
 
 /* For you and Following */
 .top-nav {
-    display: flex;
-    width: 598px;
-    height: 54px;
-    position: fixed;
-    border-bottom: 1px solid #2f3336;
-    cursor: pointer;
-    z-index: 1;
+  display: flex;
+  width: 598px;
+  height: 54px;
+  position: fixed;
+  border-bottom: 1px solid #2f3336;
+  cursor: pointer;
+  z-index: 1;
 }
 .top-nav span {
-    width: 306.11px;
-    height: 100%;
-    text-align: center;
-    font-weight: 500;
-    font-size: 15px;
-    padding: 16.5px 16px 16px 16px;
-    color: rgb(113, 118, 123);
+  width: 306.11px;
+  height: 100%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 16.5px 16px 16px 16px;
+  color: rgb(113, 118, 123);
 }
-.top-nav span:hover{
-    transition: 0.3s;
-    background: rgb(22, 24, 28);
+.top-nav span:hover {
+  transition: 0.3s;
+  background: rgb(22, 24, 28);
 }
 .top-nav .active {
-    font-weight: 700;
-    width: 291.91px;
-    color: rgb(231, 233, 234);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  font-weight: 700;
+  width: 291.91px;
+  color: rgb(231, 233, 234);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .blue-line {
-    background-color: rgb(29, 155, 240);
-    width: 56px;
-    height: 4px;
-    border-radius: 9999px;
-    position: absolute;
-    bottom: 0px;
+  background-color: rgb(29, 155, 240);
+  width: 56px;
+  height: 4px;
+  border-radius: 9999px;
+  position: absolute;
+  bottom: 0px;
 }
 
 /* posting styling */
 .posting {
-    position: relative;
-    width: 100%;
-    height: 120px;
-    padding-top: 4px;
-    margin-top: 54px;
-    padding: 0px 16px;
+  position: relative;
+  width: 100%;
+  height: 120px;
+  padding-top: 4px;
+  margin-top: 54px;
+  padding: 0px 16px;
 }
 .text {
-    display: flex;
-    margin-top: 16px;
+  display: flex;
+  margin-top: 16px;
 }
 .text img {
-    margin-right: 8px;
-    cursor: pointer;
+  margin-right: 8px;
+  cursor: pointer;
 }
 .text img:hover {
-    opacity: 90%;
+  opacity: 90%;
 }
 #text {
-    width: 100%;
-    padding: 2px 0px;
-    margin: 1.5px 2px 2px 2px;
-    outline: none;
-    border: none;
-    font-size: 20px;
-    color: rgb(231, 233, 234);
+  width: 100%;
+  padding: 2px 0px;
+  margin: 1.5px 2px 2px 2px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  color: rgb(231, 233, 234);
 }
 #text::placeholder {
-    color: #63686c
+  color: #63686c;
 }
 
 /* Reply section only shows when you start typing
@@ -283,146 +285,146 @@
 
 /* Under Reply styling */
 .under-reply {
-    width: 100%;
-    display: flex;
-    margin-top: 4.5px;
+  width: 100%;
+  display: flex;
+  margin-top: 4.5px;
 }
 .under-icons {
-    width: 518px;
-    margin-left: 40px;
-    height: 40px;
-    padding: 13px 4px;
-    position: relative;
+  width: 518px;
+  margin-left: 40px;
+  height: 40px;
+  padding: 13px 4px;
+  position: relative;
 }
 
 .under-icons svg {
-    box-sizing: content-box;
-    margin-right: 0.75px;
-    padding: 6px;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    cursor: pointer;
+  box-sizing: content-box;
+  margin-right: 0.75px;
+  padding: 6px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  cursor: pointer;
 }
 .under-icons svg:hover {
-    transition: 0.3s;
-    background-color: rgb(29, 155, 240, 0.11);
+  transition: 0.3s;
+  background-color: rgb(29, 155, 240, 0.11);
 }
-.location:hover { 
-    background-color: black;
-    cursor: default;
+.location:hover {
+  background-color: black;
+  cursor: default;
 }
 
 .under-reply span {
-    box-sizing: content-box;
-    height: 18px;
-    width: 32.73px;
-    font-size: 15px;
-    color: rgb(7, 10, 12);
-    font-weight: 700;
-    padding: 8px 17px 10px 17px;
-    border-radius: 9999px;
-    margin: 11px 0 0px 0px;
-    background-color: rgb(239, 243, 244, 0.5);
-    cursor: default;
+  box-sizing: content-box;
+  height: 18px;
+  width: 32.73px;
+  font-size: 15px;
+  color: rgb(7, 10, 12);
+  font-weight: 700;
+  padding: 8px 17px 10px 17px;
+  border-radius: 9999px;
+  margin: 11px 0 0px 0px;
+  background-color: rgb(239, 243, 244, 0.5);
+  cursor: default;
 }
 
 /* Show posts styling */
 .show-posts {
-    width: 100%;
-    height: 50px;
-    border-bottom: 1px solid #2f3336;
-    border-top: 1px solid #2f3336;
-    color: rgb(29, 155, 240);
-    text-align: center;
-    padding-top: 13.5px;
-    font-size: 15px;
-    cursor: pointer;
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #2f3336;
+  border-top: 1px solid #2f3336;
+  color: rgb(29, 155, 240);
+  text-align: center;
+  padding-top: 13.5px;
+  font-size: 15px;
+  cursor: pointer;
 }
 .show-posts:hover {
-    transition: 0.3s;
-    background:rgb(22, 24, 28, 0.3);   
+  transition: 0.3s;
+  background: rgb(22, 24, 28, 0.3);
 }
 
 /* THE TWITTER POSTS */
 .posted-content {
-    display: flex;
-    border-bottom: 1px solid #2f3336;
-    cursor: pointer;
-    padding: 12px 16px 0px 16px;
+  display: flex;
+  border-bottom: 1px solid #2f3336;
+  cursor: pointer;
+  padding: 12px 16px 0px 16px;
 }
 .posted-content:hover {
-    transition: 0.2s;
+  transition: 0.2s;
+  background-color: rgb(8, 8, 8);
+  * {
     background-color: rgb(8, 8, 8);
-    * {
-        background-color: rgb(8, 8, 8);
-    }
+  }
 }
 .posted-content img {
-    width: 40px;
-    height: 40px;
-    margin-right: 8px;
-    border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+  border-radius: 50%;
 }
 .posted-content svg:hover {
-    transition: 0.2s;
-    background-color: rgb(29, 155, 240, 0.15);
-    fill: rgb(29, 155, 240);
-    z-index: 1;
+  transition: 0.2s;
+  background-color: rgb(29, 155, 240, 0.15);
+  fill: rgb(29, 155, 240);
+  z-index: 1;
 }
 
 /* All the content next to the image */
 .twitter-post {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Details about twitter poster */
 .details {
-    display: flex;
-    position: relative;
+  display: flex;
+  position: relative;
 }
 .details svg {
-    position: relative;
-    fill: rgb(29, 155, 240);
-    height: 18.75px;
-    width: 18.75px;
-    margin: 3px 0px 0px 4px;
+  position: relative;
+  fill: rgb(29, 155, 240);
+  height: 18.75px;
+  width: 18.75px;
+  margin: 3px 0px 0px 4px;
 }
 
 .description {
-    font-size: 15px;
-    line-height: 20px;
+  font-size: 15px;
+  line-height: 20px;
 }
 
 .details .first-icon {
-    position: absolute;
-    right: 26.75px;
-    fill: rgb(113, 118, 123);
-    box-sizing: content-box;
-    padding: 8px;
-    border-radius: 50%;
-    top: -10px;
+  position: absolute;
+  right: 26.75px;
+  fill: rgb(113, 118, 123);
+  box-sizing: content-box;
+  padding: 8px;
+  border-radius: 50%;
+  top: -10px;
 }
 .details .second-icon {
-    position: absolute;
-    right: 0px;
-    fill: rgb(113, 118, 123);
-    box-sizing: content-box;
-    padding: 8px;
-    border-radius: 50%;
-    top: -10px;
+  position: absolute;
+  right: 0px;
+  fill: rgb(113, 118, 123);
+  box-sizing: content-box;
+  padding: 8px;
+  border-radius: 50%;
+  top: -10px;
 }
 .left-margin {
-    margin-left: 4px;
+  margin-left: 4px;
 }
 
 /* video styling */
 video {
-    width: 516px;
-    height: 516px;
-    border: 1px solid rgb(47, 51, 54);
-    border-radius: 16px;
+  width: 516px;
+  height: 516px;
+  border: 1px solid rgb(47, 51, 54);
+  border-radius: 16px;
 }
 /* .video-elements {
     display: flex;
@@ -446,407 +448,631 @@ video:hover {
 } */
 /* Bottom icons */
 .bottom-icons {
-    margin: 2px 0px 2px -8px;
-    display: flex;
-    align-items: center;
+  margin: 2px 0px 2px -8px;
+  display: flex;
+  align-items: center;
 }
 .bottom-icons svg {
-    box-sizing: content-box;
-    fill: rgb(113, 118, 123);
-    height: 18.75px;
-    width: 18.75px;
-    padding: 8px;
-    border-radius: 50%;
+  box-sizing: content-box;
+  fill: rgb(113, 118, 123);
+  height: 18.75px;
+  width: 18.75px;
+  padding: 8px;
+  border-radius: 50%;
 }
 .bottom-icons span {
-    color: rgb(113, 118, 123);
-    font-size: 13px;
-    margin-left: -4px;
-    line-height: 16px;
-    margin-right: 58.8px;
+  color: rgb(113, 118, 123);
+  font-size: 13px;
+  margin-left: -4px;
+  line-height: 16px;
+  margin-right: 58.8px;
 }
 
 .second {
-    margin-left: -6px;
+  margin-left: -6px;
 }
 
 /* Colourfull icons */
 .grouped-bottom-icon1 {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .grouped-bottom-icon1:hover {
-    transition: 0.2s;
-    svg {
-        background-color: rgb(29, 155, 240, 0.15);
-        fill: rgb(29, 155, 240);
-    }
-    span {
+  transition: 0.2s;
+  svg {
+    background-color: rgb(29, 155, 240, 0.15);
+    fill: rgb(29, 155, 240);
+  }
+  span {
     color: rgb(29, 155, 240);
-    }    
+  }
 }
 
 .grouped-bottom-icon2 {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .grouped-bottom-icon2:hover {
-    transition: 0.2s;
-    svg {
-        background-color: rgb(0, 186, 124,0.15);
-        fill: rgb(0, 186, 124);;
-    }
-    span {
-        color: rgb(0, 186, 124);
-    }  
+  transition: 0.2s;
+  svg {
+    background-color: rgb(0, 186, 124, 0.15);
+    fill: rgb(0, 186, 124);
+  }
+  span {
+    color: rgb(0, 186, 124);
+  }
 }
 
 .grouped-bottom-icon3 {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .grouped-bottom-icon3:hover {
-    transition: 0.2s;
-    svg {
-        background-color: rgb(249, 24, 128, 0.15);
-        fill: rgb(249, 24, 128)
-    }
-    span {
-        color: rgb(249, 24, 128)
-    }  
+  transition: 0.2s;
+  svg {
+    background-color: rgb(249, 24, 128, 0.15);
+    fill: rgb(249, 24, 128);
+  }
+  span {
+    color: rgb(249, 24, 128);
+  }
 }
 
 .grouped-bottom-icon4 {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .grouped-bottom-icon4:hover {
-    transition: 0.2s;
-    svg {
-        background-color: rgb(29, 155, 240, 0.15);
-        fill: rgb(29, 155, 240);
-    }
-    span {
-        color: rgb(29, 155, 240);
-    }  
+  transition: 0.2s;
+  svg {
+    background-color: rgb(29, 155, 240, 0.15);
+    fill: rgb(29, 155, 240);
+  }
+  span {
+    color: rgb(29, 155, 240);
+  }
 }
 
 /* RIGHT SIDEBAR */
 .right-sidebar {
-    box-sizing: content-box;
-    overflow: scroll;
-    width: 350px;
-    padding-left: 30px;
-    margin-right: 70px;
-    position: sticky;
-    top: 0px;
+  box-sizing: content-box;
+  overflow: scroll;
+  width: 350px;
+  padding-left: 30px;
+  margin-right: 70px;
+  position: sticky;
+  top: 0px;
 }
 
 /* Search bar */
 .searchbar {
-    width: 380px;
-    position: fixed;
-    z-index: 1;
-    height: 54px;
+  width: 380px;
+  position: fixed;
+  z-index: 1;
+  height: 54px;
 }
 .search {
-    margin: 4.5px 0px 16.5px 0px;
-    height: 44px;
-    border-radius: 9999px;
-    padding: 14px;
-    border: 1px solid rgb(113, 118, 123, 0.42);
-    display: flex;
-    align-items: center;
-    width: 350px;
+  margin: 4.5px 0px 16.5px 0px;
+  height: 44px;
+  border-radius: 9999px;
+  padding: 14px;
+  border: 1px solid rgb(113, 118, 123, 0.42);
+  display: flex;
+  align-items: center;
+  width: 350px;
 }
 .search svg {
-    fill: rgb(113, 118, 123);
-    height: 16px;
-    width: 16px;
-    margin-left: -1px;
+  fill: rgb(113, 118, 123);
+  height: 16px;
+  width: 16px;
+  margin-left: -1px;
 }
 .search input {
-    border: none;
-    color: rgb(239, 243, 244);
-    outline: none;
-    font-size: 14px;
-    width: 318px;
-    padding-right: 16px;
-    padding-left: 4px;
-    line-height: 16px;
+  border: none;
+  color: rgb(239, 243, 244);
+  outline: none;
+  font-size: 14px;
+  width: 318px;
+  padding-right: 16px;
+  padding-left: 4px;
+  line-height: 16px;
 }
 
 /* Premium block */
 .premium {
-    margin-top: 65px;
-    margin-bottom: 16px;
+  margin-top: 65px;
+  margin-bottom: 16px;
 }
 .content {
-    padding: 12px 16px 0px 16px;
-    border: 1px solid rgb(113, 118, 123, 0.42);
-    border-radius: 16px;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    column-gap: 10px;
-    width: 350px;
-    position: relative;
+  padding: 12px 16px 0px 16px;
+  border: 1px solid rgb(113, 118, 123, 0.42);
+  border-radius: 16px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  column-gap: 10px;
+  width: 350px;
+  position: relative;
 }
 .premium .content {
-    padding: 12px 16px;
+  padding: 12px 16px;
 }
 
 .premium .content h2 {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 h2 {
-    margin: 0px 0px 12px 0px;
-    font-size: 20px;
-    font-weight: 800;
-    line-height: 24px;
+  margin: 0px 0px 12px 0px;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 24px;
 }
 .content p {
-    font-size: 15px;
-    line-height: 20px;
+  font-size: 15px;
+  line-height: 20px;
 }
 /* Subscribe */
 .subscribe {
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 24px;
-    border-radius: 9999px;
-    padding: 5.5px 17px 5px 17px;
-    height: 36px;
-    color: white;
-    background: rgb(29, 155, 240);
-    cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 24px;
+  border-radius: 9999px;
+  padding: 5.5px 17px 5px 17px;
+  height: 36px;
+  color: white;
+  background: rgb(29, 155, 240);
+  cursor: pointer;
 }
 .subscribe:hover {
-    transition: 0.2s;
-    background: rgb(29, 155, 240, 0.9);
+  transition: 0.2s;
+  background: rgb(29, 155, 240, 0.9);
 }
 
 /* Whats Happening Block */
 .happening {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 /* All spans under content div */
 .content span {
-    box-sizing: content-box;
-    cursor: pointer;
-    width: 100%;
-    padding: 12px 16px;
-    margin-left: -16px;
-    background: black;
+  box-sizing: content-box;
+  cursor: pointer;
+  width: 100%;
+  padding: 12px 16px;
+  margin-left: -16px;
+  background: black;
 }
 .content span:hover {
-    transition: 0.2s ease;
+  transition: 0.2s ease;
+  background-color: rgb(8, 8, 8);
+  * {
     background-color: rgb(8, 8, 8);
-    * {
-        background-color: rgb(8, 8, 8);
-    }
-    /* It was dissappearing if I didnt add this */
-    .follow-button {
-        background-color: rgb(239, 243, 244);
-    }
+  }
+  /* It was dissappearing if I didnt add this */
+  .follow-button {
+    background-color: rgb(239, 243, 244);
+  }
 }
 
 /* Very top trending thing */
 .trending {
-    height: 79px;
-    width: 316px;
-    display: flex;
+  height: 79px;
+  width: 316px;
+  display: flex;
 }
 .trending img {
-    width: 79px;
-    height: 79px;
-    border-radius: 12px;
+  width: 79px;
+  height: 79px;
+  border-radius: 12px;
 }
 .trending-title {
-    margin-left: 12px;
-    width: 225px;
+  margin-left: 12px;
+  width: 225px;
 }
 .trending-title p {
-    font-size: 13px;
-    line-height: 16px;
-    margin-bottom: 0px;
-    color: #63686c;
+  font-size: 13px;
+  line-height: 16px;
+  margin-bottom: 0px;
+  color: #63686c;
 }
 
 /* All h3's */
 h3 {
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 20px;
-    margin: 2px 0px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+  margin: 2px 0px;
 }
 
 /* h4 and p styling */
-.happening .content p, h4 {
-    color: rgb(113, 118, 123);
-    margin-top: 2px;
-    margin-bottom: 0px;
-    font-weight: 400;
+.happening .content p,
+h4 {
+  color: rgb(113, 118, 123);
+  margin-top: 2px;
+  margin-bottom: 0px;
+  font-weight: 400;
 }
 h4 {
-    font-size: 13px;
-    line-height: 16px;
-    margin: 0px;
+  font-size: 13px;
+  line-height: 16px;
+  margin: 0px;
 }
 
 /* Sub-paragraph for the 2nd top trending */
 .sub-paragraph {
-    display: flex;
-    margin-top: 4px;
+  display: flex;
+  margin-top: 4px;
 }
 .sub-paragraph svg {
-    height: 13px;
-    width: 13px;
-    fill: rgb(113, 118, 123);
-    margin-right: 4px;
-    margin-top: 1px;
+  height: 13px;
+  width: 13px;
+  fill: rgb(113, 118, 123);
+  margin-right: 4px;
+  margin-top: 1px;
 }
 
 /* Each span in the Happening div */
 .trending-things {
-    position: relative;
+  position: relative;
 }
 .trending-things i {
-    height: 34.75px;
-    width: 34.75px;
-    position: absolute;
-    right: 6px;
-    top: 4px;
-    font-size: 20px;
-    padding: 8px;
-    border-radius: 50%;
-    cursor: pointer;
-    color: rgb(113, 118, 123);
+  height: 34.75px;
+  width: 34.75px;
+  position: absolute;
+  right: 6px;
+  top: 4px;
+  font-size: 20px;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: rgb(113, 118, 123);
 }
 .trending-things i:hover {
-    transition: 0.3s;
-    background-color: rgb(29, 155, 240, 0.1);
-    color: rgb(29, 155, 240);
+  transition: 0.3s;
+  background-color: rgb(29, 155, 240, 0.1);
+  color: rgb(29, 155, 240);
 }
 
 /* Margin for the h3 tags */
 .margins {
-    margin: 3px 0px;
+  margin: 3px 0px;
 }
 
 /* Show more div */
 .show-more {
-    box-sizing: content-box;
-    color: rgb(29, 155, 240);
-    font-size: 15px;
-    line-height: 20px;
-    border-bottom-right-radius: 16px;
-    border-bottom-left-radius: 16px;
-    padding: 16px 16px;
-    cursor: pointer;
-    margin-left: -16px;
-    width: 100%;
+  box-sizing: content-box;
+  color: rgb(29, 155, 240);
+  font-size: 15px;
+  line-height: 20px;
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  padding: 16px 16px;
+  cursor: pointer;
+  margin-left: -16px;
+  width: 100%;
 }
 .show-more:hover {
-    transition: 0.3s;
-    background: rgb(8, 8, 8);
+  transition: 0.3s;
+  background: rgb(8, 8, 8);
 }
 
 /* Lighter text */
 .lighter {
-    color: rgb(113, 118, 123);
-    font-weight: 400;
+  color: rgb(113, 118, 123);
+  font-weight: 400;
 }
 
 .underline:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* Follow styling */
 .follow .content span {
-    display: flex;
-    height: 41.063px;
-    position: relative;
-    align-items: center;
+  display: flex;
+  height: 41.063px;
+  position: relative;
+  align-items: center;
 }
 
 .follow img {
-    margin-right: 8px;
-    height: 40px;
-    width: 40px;
+  margin-right: 8px;
+  height: 40px;
+  width: 40px;
 }
 
 .follow-button {
-    box-sizing: content-box;
-    height: 16px;
-    width: 43.797px;
-    font-size: 14px;
-    color: rgb(15, 20, 25);
-    font-weight: 700;
-    padding: 8px 17px 10px 17px;
-    border-radius: 9999px;
-    background-color: rgb(239, 243, 244);
-    cursor: pointer;
-    position: absolute;
-    right: 16px;
+  box-sizing: content-box;
+  height: 16px;
+  width: 43.797px;
+  font-size: 14px;
+  color: rgb(15, 20, 25);
+  font-weight: 700;
+  padding: 8px 17px 10px 17px;
+  border-radius: 9999px;
+  background-color: rgb(239, 243, 244);
+  cursor: pointer;
+  position: absolute;
+  right: 16px;
 }
 .follow .content span .follow-button:hover {
-    background-color: rgb(239, 243, 244, 0.9);
+  background-color: rgb(239, 243, 244, 0.9);
 }
 
 /* Footer Styling */
 footer {
-    margin-top: 16px;
-    font-size: 13px;
-    line-height: 16px;
-    width: 318;
-    padding: 0px 16px 72px 16px;
+  margin-top: 16px;
+  font-size: 13px;
+  line-height: 16px;
+  width: 318;
+  padding: 0px 16px 72px 16px;
 }
 footer ul {
-    display: flex;
-    list-style-type: none;
-    flex-wrap: wrap;
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
 }
 footer ul li {
-    margin: 2px 0px;
-    padding-right: 12px;
-    cursor: pointer;
-    color: rgb(113, 118, 123);
-
+  margin: 2px 0px;
+  padding-right: 12px;
+  cursor: pointer;
+  color: rgb(113, 118, 123);
 }
 footer ul li:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 footer ul li svg {
-    fill: rgb(113, 118, 123);
-    height: 13px;
-    width: 17px;
-    padding: 0px 2px;
-    padding-top: 6px;
+  fill: rgb(113, 118, 123);
+  height: 13px;
+  width: 17px;
+  padding: 0px 2px;
+  padding-top: 6px;
 }
 
 /* GrokAI Styles */
 .grokAI {
-    position: absolute;
-    bottom: 12px;
-    right: 37px;
+  position: absolute;
+  bottom: 12px;
+  right: 37px;
 }
 .grokAI svg {
-    box-sizing: content-box;
-    padding: 11.5px 11.5px 10.5px 10.5px;
-    fill: white;
-    width: 32px;
-    height: 32px;
-    border-radius: 16px;
+  box-sizing: content-box;
+  padding: 11.5px 11.5px 10.5px 10.5px;
+  fill: white;
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
 }
 .grokAI svg:hover {
-    transition: 0.3s;
-    background: rgb(29, 155, 240, 0.15);
+  transition: 0.3s;
+  background: rgb(29, 155, 240, 0.15);
 }
 .grokAI button {
-    height: 57px;
-    border-radius: 16px;
-    border: 1px solid rgb(75, 78, 82);
-    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 15px 0px, rgba(255, 255, 255, 0.15) 0px 0px 3px 1px;
+  height: 57px;
+  border-radius: 16px;
+  border: 1px solid rgb(75, 78, 82);
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 15px 0px,
+    rgba(255, 255, 255, 0.15) 0px 0px 3px 1px;
+}
+
+.mobile_nav {
+  display: none;
+}
+.mobile-post {
+  display: none;
+}
+.above-nav {
+  display: none;
+}
+
+/* PHONE STYLES */
+@media (max-width: 768px) {
+  /* Mobile Nav */
+  .mobile_nav {
+    display: block;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 56px;
+    border-top: 1px solid #2f3336;
+    z-index: 3;
+  }
+  .icons {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+    height: 100%;
+  }
+  .icons i {
+    padding: 8px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+  }
+  .icons i:hover {
+    transition: 0.3s;
+    background-color: rgb(50, 50, 50);
+    border-radius: 50%;
+    svg {
+      background-color: rgba(50, 50, 50, 1);
+    }
+  }
+  .mobile_nav .icons i svg {
+    fill: white;
+    width: 24px;
+    height: 24px;
+  }
+
+  /* Mobile post */
+  .mobile-post {
+    display: block;
+    position: absolute;
+    bottom: 64px;
+    right: 16px;
+    background-color: transparent;
+  }
+  .mobile-post svg {
+    box-sizing: content-box;
+    fill: white;
+    width: 24px;
+    height: 24px;
+    background-color: rgb(29, 155, 240);
+    padding: 16px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  /* Above top nav */
+  .above-nav {
+    display: flex;
+    width: 100%;
+    height: 54px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+  }
+  .above-nav .logo {
+    margin-right: -50px;
+  }
+  .above-nav img {
+    height: 32px;
+    width: 32px;
+  }
+  .above-nav .upgrade {
+    padding: 6px 15px;
+    border-radius: 9999px;
+    border: 1px solid rgb(94, 94, 94);
+  }
+  .above-nav img,
+  .upgrade {
+    margin-top: 5px;
+  }
+
+  /* Everything else */
+  .sections {
+    margin-bottom: 55px;
+  }
+
+  .right-sidebar {
+    display: none;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .main-section {
+    margin: 0px;
+    width: 100%;
+  }
+  .top-nav {
+    width: 100%;
+    position: relative;
+  }
+  .top-nav .active {
+    width: 50%;
+  }
+  .top-nav span {
+    width: 50%;
+  }
+
+  .posting {
+    display: none;
+  }
+
+  .posts,
+  .twitter-post,
+  .posted-content,
+  .details,
+  .description,
+  .under-reply,
+  .under-icons,
+  .bottom-icons {
+    width: 100%;
+  }
+
+  video {
+    width: 100%;
+    height: 100%;
+  }
+
+  .bottom-icons {
+    justify-content: space-between;
+  }
+  .bottom-icons span {
+    margin-right: 0px;
+  }
+
+  .grokAI {
+    display: none;
+  }
+}
+
+@media (max-width: 596px) {
+  .twitter-post {
+    width: 85%;
+  }
+  .bottom-icons {
+    width: 100%;
+  }
+}
+
+@media (max-width: 380px) {
+  .first-icon,
+  .first,
+  .second {
+    display: none;
+  }
+
+  .above-nav .logo {
+    margin-right: 0px;
+  }
+
+  .details {
+    display: flex;
+    flex-direction: column;
+  }
+  .posted-content img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .grouped-bottom-icon1 svg,
+  .grouped-bottom-icon2 svg,
+  .grouped-bottom-icon3 svg,
+  .grouped-bottom-icon4 svg {
+    width: 12px;
+    height: 12px;
+  }
+  .bottom-icons span {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 240px) {
+  .bottom-icons {
+    margin-left: -15px;
+  }
+
+  .mobile-post svg {
+    width: 20px;
+    height: 20px;
+    padding: 12px;
+  }
+  .icons i {
+    padding: 6px;
+    height: 28px;
+    width: 28px;
+  }
+  .mobile_nav .icons i svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media (max-width: 220px) {
+  .bottom-icons {
+    margin-left: -37px;
+  }
 }
