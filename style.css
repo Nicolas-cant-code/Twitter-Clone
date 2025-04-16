@@ -950,9 +950,6 @@ footer ul li svg {
   }
 
   /* Everything else */
-  .sections {
-    margin-bottom: 55px;
-  }
 
   .right-sidebar {
     display: none;
@@ -965,6 +962,7 @@ footer ul li svg {
   .main-section {
     margin: 0px;
     width: 100%;
+    padding-bottom: 55px;
   }
   .top-nav {
     width: 100%;
